@@ -1,9 +1,12 @@
+/* barre de navigation + style des liens */
 #navbar{
     display: grid;
     grid-template-columns: 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
-    grid-template-areas: ". Gmail Images menu sign-in";
+    grid-template-areas:
+        ". Gmail Images menu sign-in";
 }
+
 
 #Gmail{
     grid-area: Gmail;
@@ -34,4 +37,102 @@ a{
     color: rgba(0, 0, 0, 0.87);
     font-family: arial, sans-serif;
     font-size: 13px;
+}
+
+/* logo, barre recherche, boutons */
+/*
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 200px;
+    grid-template-areas: 
+        ". logo logo ."
+        ". search search ."
+        ". google-search-btn lucky-search-btn .";
+}
+
+#logo{
+    grid-area: logo;
+}
+
+#search{
+    grid-area: logo;
+}
+
+#google-search-btn{
+    grid-area: google-search-btn;
+}
+
+#lucky-search-btn{
+    grid-area: lucky-search-btn;
+}
+*/
+
+#footer{
+    display: grid;
+    /* grid-template-columns: repeat(9, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+    grid-template-rows: 50px;
+    grid-template-areas: 
+        "pub entreprise propos comment neutre infos confidentialite conditions parametres";
+    background-color: rgb(242, 242, 242);
+}
+
+#footer a{
+    color:rgb(112, 117, 122) ;
+    font-size: 14px;
+}
+
+#pub{
+    grid-area: pub;
+    justify-self: center;
+    align-self: center;
+}
+
+#entreprise{
+    grid-area: entreprise;
+    justify-self: center;
+    align-self: center;
+}
+
+#propos{
+    grid-area: propos;
+    justify-self: center;
+    align-self: center;
+}
+
+#neutre{
+    grid-area: neutre;
+    justify-self: center;
+    align-self: center;
+}
+
+#infos{
+    grid-area: infos;
+    justify-self: center;
+    align-self: center;
+}
+
+#confidentialite{
+    grid-area: confidentialite;
+    justify-self: center;
+    align-self: center;
+}
+
+#conditions{
+    grid-area: conditions;
+    justify-self: center;
+    align-self: center;
+}
+
+#parametres{
+    grid-area: parametres;
+    justify-self: center;
+    align-self: center;
+}
+
+#Gmail{
+    grid-area: Gmail;
+    justify-self: center;
+    align-self: center;
 }
