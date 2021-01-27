@@ -70,12 +70,12 @@ a{
 
 #footer{
     display: grid;
-    /* grid-template-columns: repeat(9, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+    /*grid-template-columns: repeat(auto-fit, minmax(50px,1fr));*/
     grid-template-rows: 50px;
     grid-template-areas: 
         "pub entreprise propos comment neutre infos confidentialite conditions parametres";
     background-color: rgb(242, 242, 242);
+    white-space: nowrap;
 }
 
 #footer a{
@@ -101,6 +101,11 @@ a{
     align-self: center;
 }
 
+#comment{
+    grid-area: comment;
+    justify-self: center;
+    align-self: center;
+}
 #neutre{
     grid-area: neutre;
     justify-self: center;
