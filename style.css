@@ -1,4 +1,4 @@
-/* barre de navigation + style des liens */
+/* BARRE DE NAVIGATION */
 #navbar{
     display: grid;
     grid-template-columns: 1fr 50px 50px 50px 50px;
@@ -39,11 +39,11 @@ a{
 }
 
 
-/* Logo GOOGLE barre recherche */
+/* GOOGLE SEARCH BUTTUNS */
 #main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-rows: 250px 70px 70px 250px;
     grid-template-areas: 
         ". logo ."
         ". search-bar ."
@@ -60,7 +60,7 @@ a{
 }
 
 #search-btn{
-    display: flex;
+    display: flex; /* flex pour incorporer 2 boutons au centre */
     grid-area: search-btn;
     justify-self: center;
     align-self: center;
@@ -77,7 +77,7 @@ a{
 
 
 
-/* footer */
+/* FOOTER */
 #footer{
     display: grid;
     grid-template-rows: 50px;
