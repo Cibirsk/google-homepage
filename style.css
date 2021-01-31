@@ -23,12 +23,24 @@
     grid-area: menu;
     justify-self: center;
     align-self: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #sign-in{
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+    background-color: #4683ea;
+    height: 30px;
+    width: 65px;
+    line-height: 30px;
+    text-align: centeR;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    margin-right: 25px;
+    margin-left: 15px;
 }
 
 a{
@@ -43,7 +55,7 @@ a{
 #main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-rows: 250px 70px 70px ;
     grid-template-areas: 
         ". logo ."
         ". search-bar ."
@@ -53,10 +65,14 @@ a{
 #logo{
     grid-area: logo;
     justify-self: center;
+    align-self: end;
 }
 
 #search-bar{
     grid-area: search-bar;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
 }
 
 #search-btn{
@@ -68,10 +84,25 @@ a{
 
 #google-search-btn{
     grid-area: google-search-btn;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 #lucky-search-btn{
     grid-area: lucky-search-btn;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #f8f9fa;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 
@@ -84,7 +115,9 @@ a{
     grid-template-areas: 
         "pub entreprise propos comment neutre infos confidentialite conditions parametres";
     background-color: rgb(242, 242, 242);
-    white-space: nowrap; /*oblige le text à rester sur 1 ligne */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #footer a{
