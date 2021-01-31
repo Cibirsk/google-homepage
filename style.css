@@ -39,7 +39,7 @@ a{
 }
 
 /* logo, barre recherche, boutons */
-/*
+
 #main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -65,15 +65,18 @@ a{
 #lucky-search-btn{
     grid-area: lucky-search-btn;
 }
-*/
 
+
+
+
+/* footer */
 #footer{
     display: grid;
     grid-template-rows: 50px;
     grid-template-areas: 
         "pub entreprise propos comment neutre infos confidentialite conditions parametres";
     background-color: rgb(242, 242, 242);
-    white-space: nowrap;
+    white-space: nowrap; /*oblige le text à rester sur 1 ligne */
 }
 
 #footer a{
