@@ -38,24 +38,32 @@ a{
     font-size: 13px;
 }
 
-/* logo, barre recherche, boutons */
 
+/* Logo GOOGLE barre recherche */
 #main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 100px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 70px 200px;
     grid-template-areas: 
-        ". logo logo ."
-        ". search search ."
-        ". google-search-btn lucky-search-btn .";
+        ". logo ."
+        ". search-bar ."
+        ". search-btn .";
 }
 
 #logo{
     grid-area: logo;
+    justify-self: center;
 }
 
-#search{
-    grid-area: logo;
+#search-bar{
+    grid-area: search-bar;
+}
+
+#search-btn{
+    display: flex;
+    grid-area: search-btn;
+    justify-self: center;
+    align-self: center;
 }
 
 #google-search-btn{
